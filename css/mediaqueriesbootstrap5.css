@@ -58,13 +58,14 @@
     /* Estilos específicos para Pantalla de portátil más común */
 }
 
-/* Pantalla Full HD */
-@media (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
-    /* Estilos específicos para Pantalla Full HD */
+/* Pantallas cercanas a Full HD */
+@media (min-width: 1900px) and (max-width: 2000px) and (min-height: 900px) and (max-height: 1100px) {
+    /* Estilos específicos para pantallas cercanas a Full HD */
     .imagen_carousel {
         height: 800px !important; 
     }
 }
+
 
 
 
