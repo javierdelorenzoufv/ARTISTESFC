@@ -1,48 +1,72 @@
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* iPhone 8 / Redmi 9 */
+@media (min-width: 393px) and (max-width: 393px) and (min-height: 851px) and (max-height: 851px) {
+    /* Estilos específicos para iPhone 8 / Redmi 9 */
+    .banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
 }
-/* Small devices (landscape phones, entre 576px y 767.98px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
-/* Medium devices (tablets, entre 768px y 991.98px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
-/* Large devices (desktops, entre 992px y 1199.98) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-}
-/* Extra large devices (large desktops, entre 1200px y 1399.98px) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-}
-/* Extra large devices (large desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
-/*----------------------------------------------------------------*/
-/*----------media queries con min-with----------------------------*/
-/*----------------------------------------------------------------*/
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
-}
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    
-}
-@media (min-width: 1920px) and (max-width: 1920px) and (min-height: 917px) and (max-height: 917px) {
-    .imagen_carousel {
-        height: 800px !important; /* Para asegurarte de que se aplique */
+
+/* iPad Mini (Vertical) */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+    /* Estilos específicos para iPad Mini (Vertical) */
+    .imagenes_clascal{
+        height: 200px !important;
+    }
+
+    .imagen_merch{
+        height: 300px !important;
+    }
+
+    .escudo{
+        padding-right: 100px !important;
+        height: auto !important;
+    }
+
+    .camiseta_azul{
+        height: 300px !important;
     }
 }
+
+/* iPad Pro 12.9" (Vertical) */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+    /* Estilos específicos para iPad Pro 12.9" (Vertical) */
+    .imagenes_clascal{
+        height: 200px !important;
+    }
+
+    .imagen_merch{
+        height: 300px !important;
+    }
+
+    .escudo{
+        margin-left: auto;
+    }
+
+    .camiseta_azul{
+        height: 300px !important;
+    }
+}
+
+/* Pantalla de portátil más común */
+@media (min-width: 1440px) and (max-width: 1440px) and (min-height: 900px) and (max-height: 900px) {
+    /* Estilos específicos para Pantalla de portátil más común */
+}
+
+/* Pantalla Full HD */
+@media (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
+    /* Estilos específicos para Pantalla Full HD */
+    .imagen_carousel {
+        height: 800px !important; 
+    }
+}
+
+
 
 
 .fuente-texto{
@@ -105,7 +129,7 @@
 }
   
 .imagen_carousel{
-    height: 670px;
+    height: 620px;
 }
 
 /*.containerclascal{
@@ -113,8 +137,7 @@
 }*/
 
 .escudo{
-    width: 230px;
-    height: 230px;
+    height: 220px;
     margin-left: 100px;
 }
 .publi-insta{
@@ -258,7 +281,6 @@
 
 .imagen_merch{
     height: 600px;
-    width: 600px;
     
 }
 
@@ -276,6 +298,38 @@
    
 }
 
-.imagen_escudos{
+/*.imagen_escudos{
+    height: 300px;
+}*/
+
+.imagenes_clascal{
     height: 300px;
 }
+
+/* Estilo general para el banner */
+.banner {
+    position: absolute; /* Por defecto, posición configurable */
+    bottom: 20px; /* Cambiar según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  /* Botón de cerrar */
+.banner .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
