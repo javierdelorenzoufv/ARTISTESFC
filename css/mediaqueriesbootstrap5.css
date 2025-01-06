@@ -1,16 +1,46 @@
 /* iPhone 8 / Redmi 9 */
 @media (min-width: 393px) and (max-width: 393px) and (min-height: 851px) and (max-height: 851px) {
     /* Estilos específicos para iPhone 8 / Redmi 9 */
+    
+    .imagen_merch {
+        height: 200px !important;     
+    }
+
+    .mapa {
+        width: 200px !important;
+    }
+
+    .escudo {
+        display: none !important;
+    }
+
+    .mapa {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .col-8 {
+        flex: 1 1 100% !important; /* Ajusta el tamaño como una columna genérica */
+        max-width: 100% !important;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important; /* Cambia a 3 columnas */
+    }
+
     .banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        transform: none;
-        border-radius: 0;
-        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-      }
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+    }
+
+    .uni{
+        height: 200px !important;
+    }
 }
+
 
 /* iPad Mini (Vertical) */
 @media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
@@ -30,6 +60,19 @@
 
     .camiseta_azul{
         height: 300px !important;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr) !important; /* Cambia a 3 columnas */
+    }
+
+    .escudo {
+        display: none !important;
+    }
+
+    .col-8 {
+        flex: 1 1 100% !important; /* Ajusta el tamaño como una columna genérica */
+        max-width: 100% !important;
     }
 }
 
@@ -81,6 +124,13 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+.fuente-texto.carousel{
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1); /* Sombra blanca */
+
+}
+
+
 
 
 .texto-navbar{
@@ -334,3 +384,27 @@
     cursor: pointer;
 }
   
+.video-gallery-row {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+    justify-content: center; /* Centrar las columnas */
+}
+
+.video-item-col {
+    flex: 1; /* Hacer que cada columna ocupe el mismo espacio */
+    max-width: 45%; /* Limitar el ancho máximo de las columnas */
+}
+
+.video-item-col video {
+    width: 100%; /* Hacer que el video ocupe todo el ancho disponible de la columna */
+    height: auto; /* Mantener la relación de aspecto del video */
+}
+
+.video-description {
+    font-family: "Oswald", sans-serif;
+    color:#777de6;
+}
+
+.uni{
+    height: 400px;
+}
